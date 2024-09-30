@@ -1,0 +1,30 @@
+.MeetHostsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  position: relative;
+}
+
+.HostPhoto {
+  width: 35vw;
+  height: 75vh;
+}
+
+.MiddleLineContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.TopLine,
+.BottomLine {
+  background-color: #eccb34;
+  width: 1rem;
+  height: 15rem;
+}
+
+.ContentContainer h1,
+p {
+  color: #eccb34;
+}

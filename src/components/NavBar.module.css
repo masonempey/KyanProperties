@@ -1,0 +1,100 @@
+.NavBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  z-index: 3;
+  font-weight: 400;
+  color: #fafafa;
+}
+
+.NavContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.LogoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+
+.Logo img {
+  width: 6vw;
+  height: auto;
+  object-fit: contain;
+}
+
+.LogoLine {
+  height: 5vw;
+  border: 1px solid #fafafa;
+  opacity: 0.6;
+}
+
+.SpanContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding: 1.2rem;
+}
+
+.NavItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.NavItems a {
+  font-size: 1.2rem;
+  position: relative;
+  text-decoration: none;
+  color: #fafafa;
+  letter-spacing: 0.1rem;
+  padding: 0 10px;
+}
+
+.NavItems a:hover {
+  color: #eccb34;
+  transition: 0.5s;
+}
+
+.NavItems a::after {
+  content: "";
+  position: absolute;
+  background-color: #eccb34;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -3px;
+  transition: 0.3s;
+}
+
+.NavItems a:hover:after {
+  width: 100%;
+}
+
+.Profile {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+}
+
+.Profile img {
+  width: 4vw;
+  height: auto;
+}
+
+.BottomLine {
+  width: 100%;
+  border: 1px solid #fafafa;
+  opacity: 0.6;
+}

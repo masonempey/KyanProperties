@@ -1,0 +1,121 @@
+.HomeContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+}
+
+.HomeBody {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  overflow: hidden;
+  z-index: 1;
+  padding-top: 5rem;
+}
+
+.HomeHeaderContainer {
+  height: 85vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.HomeHeader {
+  height: 85vh;
+  width: 100%;
+  z-index: 2;
+}
+
+.NavBar {
+  z-index: 3;
+  position: relative;
+}
+
+.HomeHeader::before,
+.HomeHeader::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 85vh;
+  width: 100%;
+  z-index: 2;
+}
+
+.HomeHeader::before {
+  background-color: #eccb34;
+  opacity: 0.2;
+}
+
+.HomeHeader::after {
+  background-color: #373737;
+  opacity: 0.3;
+}
+
+.HomeHeader video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 85vh;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.OptionsContainer {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  text-align: center;
+  font-size: 1.35rem;
+  font-weight: 500;
+}
+
+.OptionsContainer div {
+  background-color: #fafafa;
+  padding: 0.75rem 2rem;
+  border-radius: 0.25rem;
+  border: 3px solid #373737;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.OptionsContainer div:hover {
+  background-color: #eccb34;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.BookStay {
+  margin: 1rem 0.5rem 0 0.5rem;
+}
+
+.PartnerWithUs {
+  margin: 1rem 0 0 0.5rem;
+}
+
+.House {
+  display: flex;
+  justify-content: center;
+  padding: 6.5rem;
+  z-index: 3;
+  position: relative;
+}
+
+.House img {
+  width: 30vw;
+}
+
+.MeetHostsContainer {
+  display: flex;
+  width: 85vw;
+  height: 75vh;
+}
