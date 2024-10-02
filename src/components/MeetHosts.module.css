@@ -28,3 +28,17 @@
 p {
   color: #eccb34;
 }
+
+.ContentContainer h2 {
+  color: #f0f0f0;
+  font-weight: 600;
+}
+
+.ContentContainer p {
+  width: 75%;
+}
+
+.MeetHostsContainer span {
+  display: block;
+  margin-bottom: 2rem;
+}

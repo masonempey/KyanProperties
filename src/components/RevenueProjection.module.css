@@ -1,0 +1,115 @@
+.RevenueSectionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url("../assets/CityStock.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  padding: 2rem;
+  gap: 5rem;
+}
+
+.RevenueSectionContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #eccb34;
+  opacity: 0.2;
+  z-index: 1;
+}
+
+.RevenueSectionContainer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #373737;
+  opacity: 0.3;
+  z-index: 2;
+}
+
+.RevenueSectionContainer * {
+  position: relative;
+  z-index: 3;
+}
+
+.TitleContainer {
+  display: flex;
+  flex-direction: column;
+  font-size: 4rem;
+  font-weight: 800;
+  color: #eccb34;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.CenteredText {
+  display: flex;
+  justify-content: center; /* Center text horizontally */
+  align-items: center; /* Center text vertically */
+  margin-bottom: 1rem; /* Add space between lines */
+}
+
+.FreeText {
+  color: #fafafa;
+  text-decoration: underline;
+  margin: 0 1rem 0 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
+}
+
+.MiddleTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.MiddleTextContainer p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #fafafa;
+  width: 35vw;
+}
+
+.MiddleTextContainer h3 {
+  font-size: 2rem;
+  font-weight: 750;
+  color: #eccb34;
+}
+
+.ButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20rem;
+  z-index: 5;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.ButtonContainer div {
+  font-size: 1.5rem;
+  font-weight: 750;
+  background-color: #eccb34;
+  color: #fafafa;
+  width: 12vw;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.ButtonContainer div:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}

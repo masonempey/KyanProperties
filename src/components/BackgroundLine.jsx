@@ -14,7 +14,7 @@ function BackgroundLine({
         height: `${height}vh`,
         transform: `${degree}`,
         backgroundColor: "#424242",
-        position: "fixed",
+        position: "absolute",
         top: `${top}px`,
         bottom: `${bottom}px`,
         right: `${right}px`,
