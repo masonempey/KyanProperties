@@ -5,6 +5,7 @@ import House from "../assets/HeaderHouse.png";
 import MeetHosts from "../components/MeetHosts";
 import BackgroundLine from "../components/BackgroundLine";
 import RevenueProjection from "../components/RevenueProjection";
+import WhyChooseKyan from "../components/WhyChooseKyan";
 
 function Home() {
   return (
@@ -32,6 +33,9 @@ function Home() {
         </div>
         <div className={styles.RevenueProjectionContainer}>
           <RevenueProjection />
+        </div>
+        <div className={styles.WhyChooseKyanContainer}>
+          <WhyChooseKyan />
         </div>
       </div>
       <BackgroundLine

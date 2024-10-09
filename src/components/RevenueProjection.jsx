@@ -1,9 +1,6 @@
 import styles from "./RevenueProjection.module.css";
 
 function RevenueProjection() {
-  const handleMouseEnter = () => {
-    console.log("MouseEntered");
-  };
   return (
     <div className={styles.RevenueSectionContainer}>
       <div className={styles.TitleContainer}>
@@ -21,8 +18,8 @@ function RevenueProjection() {
         <h3>We are here to help!</h3>
       </div>
       <div className={styles.ButtonContainer}>
-        <div onMouseEnter={handleMouseEnter}>Submit a Request</div>
-        <div onMouseEnter={handleMouseEnter}>Book a Call</div>
+        <div>Submit a Request</div>
+        <div>Book a Call</div>
       </div>
     </div>
   );

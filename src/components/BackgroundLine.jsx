@@ -19,7 +19,7 @@ function BackgroundLine({
         bottom: `${bottom}px`,
         right: `${right}px`,
         left: `${left}px`,
-        zIndex: -99,
+        zIndex: 1,
         pointerEvents: "none",
       }}
     ></div>

@@ -1,0 +1,114 @@
+.FooterContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 0;
+  width: 100vw;
+  height: 40vh;
+  background-color: #373737;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.FooterContent {
+  display: flex;
+  justify-content: space-between;
+  width: 60vw;
+  height: 100%;
+}
+
+.FooterImageContainer {
+  width: 40vw;
+  height: 100%;
+}
+.FooterImageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  position: relative;
+}
+
+.FooterImageContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 40%;
+  background-color: #eccb34;
+  opacity: 0.2;
+  z-index: 2;
+}
+
+.FooterImageContainer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 40%;
+  background-color: #373737;
+  opacity: 0.3;
+  z-index: 2;
+}
+
+.FooterContent li {
+  margin-bottom: 1rem;
+  font-weight: 500;
+  list-style: none;
+  color: #eccb34;
+}
+
+.SectionOne,
+.SectionTwo,
+.SectionThree,
+.SectionFour {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 0.5rem;
+  padding: 2rem;
+  width: 25%;
+  height: 100%;
+}
+
+.Content {
+  display: flex;
+  flex-direction: column;
+}
+
+.Content img {
+  width: auto;
+  height: 2vh;
+}
+
+.Content div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.Title {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.Button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10vw;
+  background-color: #eccb34;
+  color: #373737;
+  font-weight: 700;
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+  transition: transform 0.3s ease;
+}
+
+.Button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}

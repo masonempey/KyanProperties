@@ -1,6 +1,5 @@
 .MeetHostsContainer {
   display: flex;
-  justify-content: center;
   gap: 5rem;
   position: relative;
 }
@@ -8,6 +7,7 @@
 .HostPhoto {
   width: 35vw;
   height: 75vh;
+  object-fit: cover;
 }
 
 .MiddleLineContainer {
@@ -24,13 +24,25 @@
   height: 15rem;
 }
 
-.ContentContainer h1,
+.ContentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.ContentContainer h2,
 p {
   color: #eccb34;
 }
 
 .ContentContainer h2 {
+  font-size: 40px;
+}
+
+.ContentContainer h3 {
   color: #f0f0f0;
+  font-size: 25px;
   font-weight: 600;
 }
 

@@ -12,8 +12,8 @@ function MeetHosts() {
         <div className={styles.BottomLine}></div>
       </div>
       <div className={styles.ContentContainer}>
-        <h1>Meet Your Hosts</h1>
-        <h2>Kyan Properties</h2>
+        <h2>Meet Your Hosts</h2>
+        <h3>Kyan Properties</h3>
         <p>
           <span>
             We started KYAN Properties in hopes of helping homeowners get the

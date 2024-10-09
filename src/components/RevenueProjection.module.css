@@ -7,11 +7,11 @@
   background-image: url("../assets/CityStock.png");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
   height: 100vh;
   width: 100vw;
   padding: 2rem;
   gap: 5rem;
+  z-index: 0;
 }
 
 .RevenueSectionContainer::before {
@@ -40,7 +40,7 @@
 
 .RevenueSectionContainer * {
   position: relative;
-  z-index: 3;
+  z-index: 5;
 }
 
 .TitleContainer {
@@ -55,9 +55,9 @@
 
 .CenteredText {
   display: flex;
-  justify-content: center; /* Center text horizontally */
-  align-items: center; /* Center text vertically */
-  margin-bottom: 1rem; /* Add space between lines */
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
 }
 
 .FreeText {
@@ -71,6 +71,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 5rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
@@ -91,7 +92,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20rem;
+  gap: 10rem;
   z-index: 5;
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
@@ -101,7 +102,7 @@
   font-weight: 750;
   background-color: #eccb34;
   color: #fafafa;
-  width: 12vw;
+  width: 14vw;
   padding: 1rem;
   text-align: center;
   border-radius: 0.5rem;
