@@ -68,8 +68,8 @@ h1 {
 
 .Card {
   perspective: 500px;
-  width: 17.5vw;
-  height: 27.5vh;
+  width: 20vw;
+  height: 30vh;
 }
 
 .Card p {

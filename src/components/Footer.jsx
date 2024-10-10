@@ -2,7 +2,6 @@ import styles from "./Footer.module.css";
 import FooterImage from "../assets/FooterImage.png";
 import Facebook from "../assets/Facebook.png";
 import Instagram from "../assets/Instagram.png";
-import Indeed from "../assets/i.png";
 import Location from "../assets/Location.png";
 import Phone from "../assets/Phone.png";
 
@@ -45,7 +44,7 @@ const Footer = () => {
             <p>Social Media</p>
             <div className={styles.UnderLine}></div>
           </div>
-          <div className={styles.Socials}>
+          <div className={styles.Content}>
             <div>
               <img src={Facebook} />
               <li>Facebook</li>
@@ -54,17 +53,11 @@ const Footer = () => {
               <img src={Instagram} />
               <li>Instagram</li>
             </div>
-            <div>
-              <img src={Indeed} />
-              <li>Indeed</li>
-            </div>
           </div>
         </div>
         <div className={styles.SectionThree}>
           <div className={styles.Title}>
-            <div className={styles.LeftLine}></div>
             <p>Properties</p>
-            <div className={styles.UnderLine}></div>
           </div>
           <div className={styles.Content}>
             <li>Calgary</li>
